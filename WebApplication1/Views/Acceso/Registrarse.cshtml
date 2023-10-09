@@ -1,0 +1,52 @@
+﻿@model Registro
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+
+    @*------ GOOGLEAR ====> form bootstrap 5 ----------------*@
+
+    <div class="row mt-5">
+        <div class="col-sm-4 offset-sm-4">
+
+            <form asp-controller="Acceso" asp-action="Registrarse" method="post">
+                <div class="mb-3">
+                    <label for="exampleInputNombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" asp-for="Nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputApellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" asp-for="Apellido">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputUsuario" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" asp-for="Usuario">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputClave" class="form-label">Contarsena</label>
+                    <input type="password" class="form-control" asp-for="Clave">
+                </div>
+               
+              
+                <input type="submit" value="Registrarse" class="btn btn-primary" asp-action="Registrarse" asp-controller="Acceso" />
+
+            </form>
+
+
+        </div>
+    </div>
+
+
+
+</body>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</html>
