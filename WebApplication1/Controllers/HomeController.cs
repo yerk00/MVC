@@ -24,19 +24,19 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        [Authorize(Roles = "Paciente")]
+        [Authorize(Roles = "Paciente, Adiministrador")]
         public IActionResult Historial() //ventas
         {
             return View();
         }
 
-        [Authorize(Roles = "Paciente, Administrador")]
+        [Authorize(Roles = "Paciente")]
         public IActionResult Recetas() //compras
         {
             return View();
         }
 
-        [Authorize(Roles = "Paciente")]
+        [Authorize(Roles = "Paciente, Supervisor")]
         public IActionResult Resultado()  //cliebte
         {
             return View();

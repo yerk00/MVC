@@ -11,6 +11,6 @@ namespace WebApplication1.Models
         public string Usuario { get; set; }
         public string Clave { get; set; }
 
-        public string[] Roles { get; set; }
+        //public string[] Roles { get; set; }
     }
 }

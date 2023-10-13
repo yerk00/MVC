@@ -57,7 +57,7 @@ namespace WebApplication1.Controllers
                             con.Close();
                         }
                     }
-                    return RedirectToAction("Index", "Home");
+                    //return RedirectToAction("Index", "Home");
                 }
             }
             catch (Exception)
